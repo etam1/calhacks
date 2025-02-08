@@ -1,15 +1,79 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  text-align: center;
+}
+
+/* dark and light mode */
+.light-mode {
   background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Work Sans", monospace;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.toggle-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Work Sans", monospace;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.light-mode .toggle-button {
+  background-color: black;
+  color: white;
+}
+
+.light-mode .toggle-button:hover {
+  background-color: gray;
+}
+
+.dark-mode .toggle-button {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .toggle-button:hover {
+  background-color: gray;
+}
+
+.divider {
+  width: 95%;
+  border: none;
+  border-top: 2px solid currentColor;
+  margin: 10px 0;
 }
 
 .museum-image {
   max-width: 80%;
   height: auto;
   display: block;
+  margin-top: 20px;
 }
-
