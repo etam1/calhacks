@@ -1,0 +1,36 @@
+/* src/InfoBox.css */
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .info-text {
+    flex: 1;
+    padding-right: 15px;
+  }
+  
+  .info-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .info-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .info-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  

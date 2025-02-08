@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 import LightMuseumImage from "./assets/Museum.jpeg"; // Light mode image
 import DarkMuseumImage from "./assets/MuseumDark.png"; // Dark mode image
+import InfoBox from "./InfoBox";
+// import ArtImage1 from "./assets/art1.jpg"; // Example art images
+// import ArtImage2 from "./assets/art2.jpg";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  // toggle btw light and dark mode
+  // toggle between light and dark mode
   const toggleMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
@@ -20,11 +23,14 @@ const App = () => {
         </button>
       </div>
       <hr className="divider" />
+
       <img 
         src={darkMode ? DarkMuseumImage : LightMuseumImage} 
         alt="Museum" 
         className="museum-image"
       />
+
+      
     </div>
   );
 };

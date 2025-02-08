@@ -1,12 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh; 
   text-align: center;
+  overflow-y: auto;  
 }
+
 
 /* dark and light mode */
 .light-mode {
@@ -75,5 +76,12 @@
   max-width: 80%;
   height: auto;
   display: block;
+  margin-top: 20px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
