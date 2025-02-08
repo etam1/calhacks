@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
-import LightMuseumImage from "./assets/Museum.jpeg"; // Light mode image
-import DarkMuseumImage from "./assets/MuseumDark.png"; // Dark mode image
+import LightMuseumImage from "./assets/Museum.jpeg";
+import DarkMuseumImage from "./assets/MuseumDark.png";
+import Snail from "./assets/Snail.png";
+import Magazine from "./assets/magazine.png";
+import Fish from "./assets/fish.png";
+import Book from "./assets/book.png";
 import InfoBox from "./InfoBox";
-// import ArtImage1 from "./assets/art1.jpg"; // Example art images
+// import ArtImage1 from "./assets/art1.jpg"; 
 // import ArtImage2 from "./assets/art2.jpg";
 
 const App = () => {
@@ -30,7 +34,30 @@ const App = () => {
         className="museum-image"
       />
 
-      
+      <InfoBox
+        title="Illustration"
+        description="Fish"
+        image={Fish}
+      />
+      <hr className="divider" />
+      <InfoBox
+        title="Animation"
+        description="Shooting Snail - https://www.youtube.com/watch?v=deqK3hyqebQ&t=65s&ab_channel=UCBUGG"
+        image={Snail}
+      />
+      <hr className="divider" />
+      <InfoBox
+        title="Graphic Design"
+        description="Book"
+        image={Book}
+      />
+      <hr className="divider" />
+      <InfoBox
+        title="Creative Embedded System"
+        description="Magazine"
+        image={Magazine}
+      />
+      <hr className="divider" />
     </div>
   );
 };
